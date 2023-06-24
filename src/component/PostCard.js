@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { usePostContext } from "../context/PostContext";
+import TagPills from "./TagPills";
 export default function PostCard(postItem) {
   const {
     upvotes,
     downvotes,
-
+    tags,
     post,
     postDescription,
 
@@ -85,7 +86,11 @@ export default function PostCard(postItem) {
         <div className="post-title">
           <span>{post}</span>
         </div>
-        <div className="tags"></div>
+        <div className="tag-section">
+          {tags.map((tag) => {
+            return <TagPills tag={tag} />;
+          })}
+        </div>
 
         <div className="post-desc">
           <span>{postDescription}</span>

@@ -259,3 +259,30 @@
   display: flex;
   gap: 2rem;
 }
+
+.tag-section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background-color: #ccc;
+}
+
+.tag:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #333;
+}
+
+.tag-container {
+  margin-top: 10px;
+}
