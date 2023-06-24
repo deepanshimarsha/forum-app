@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +35,227 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* side nav */
+.sidebar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 20px;
+  
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 180px;
+  height: 100%;
+  margin-left: 80px;
+}
+/* top nav */
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  z-index: 9999; 
+  padding: 10px;
+  padding-left: 100px;
+}
+
+/* sort select */
+.sort{
+  margin-right: 100px;
+}
+.custom-select {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none; /* Remove default arrow styling in some browsers */
+}
+
+.custom-select::after {
+  content: "\25BC"; /* Unicode character for dropdown arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent the arrow from being clickable */
+}
+
+.custom-select option {
+  font-size: 14px;
+  color: #333;
+}
+
+.custom-select:hover {
+  background-color: white;
+}
+
+.custom-select option:hover {
+  background-color: white;
+}
+
+.custom-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.3); /* Add focus border */
+}
+
+.custom-select option[selected] {
+  background-color: white; /* Style the selected option */
+}
+
+.main  {
+  width: 600px;
+  overflow-y: scroll;
+}
+.comment-section{
+  width: 600px;
+  overflow-y: scroll;
+  margin-right: 480px;
+}
+
+/* post card */
+.post-card {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  box-sizing: border-box;
+  margin: 20px 0px;
+  gap: 2rem;
+}
+
+.post-card .content{
+  display: flex;
+  flex-direction: column;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+.post-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.post-footer i{
+  font-size: 21px;
+}
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+  
+}
+.votes{
+  display: flex;
+  flex-direction: column;
+
+}
+.votes i{
+  font-size: 24px;
+}
+.read-more {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.post-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add hover shadow effect */
+}
+
+.post-card .read-more:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+.post-card .read-more:active {
+  transform: translateY(1px); /* Add active state effect */
+}
+
+/* user-card */
+.user-card {
+  width:100%;
+  background-color: transparent;
+  
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items:flex-start;
+
+}
+
+.user-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+.user-desc{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-description {
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: #888;
+  
+}
+
+.pointer-cursor{
+  cursor: pointer;
+}
+.comment-card{
+  display: flex;
+  gap: 2rem;
 }
