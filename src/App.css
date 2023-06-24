@@ -286,3 +286,29 @@
 .tag-container {
   margin-top: 10px;
 }
+@media (min-width: 200px) and (max-width: 749px) {
+  .sidebar{
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+   }
+  .nav-links{
+    flex-direction: row;
+    margin: 0px;
+    height: 20vh;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .post-card{
+    width: 66%;
+  }
+  .post-card .content{
+    flex-wrap: wrap;
+  }
+}
