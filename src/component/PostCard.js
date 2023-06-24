@@ -4,12 +4,12 @@ export default function PostCard(postItem) {
   const {
     upvotes,
     downvotes,
-    tags,
+
     post,
     postDescription,
-    name,
+
     username,
-    comments,
+
     isBookmarked,
     picUrl,
     postId,
@@ -76,7 +76,7 @@ export default function PostCard(postItem) {
           <div className="user-img">
             <img
               src={picUrl}
-              alt="Profile Picture"
+              alt="Profile-Picture"
               height="25px"
               width="25px"
             />

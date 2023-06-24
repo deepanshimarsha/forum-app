@@ -1,5 +1,5 @@
 export default function CommentCard(commentObj) {
-  const { username, picUrl, likes, comment } = commentObj;
+  const { username, picUrl, comment } = commentObj;
   return (
     <div className="comment-card" style={{ padding: "20px" }}>
       <div className="user-img">
