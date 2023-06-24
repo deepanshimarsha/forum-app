@@ -74,12 +74,7 @@ export default function PostCard(postItem) {
       <div className="content">
         <div className="user">
           <div className="user-img">
-            <img
-              src={picUrl}
-              alt="Profile-Picture"
-              height="25px"
-              width="25px"
-            />
+            <img src={picUrl} alt="user" height="25px" width="25px" />
           </div>
           <div className="user-name">
             <span>

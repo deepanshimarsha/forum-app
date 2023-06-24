@@ -1,7 +1,8 @@
 export default function SortSelect() {
+  const handleInput = () => {};
   return (
     <div>
-      <select class="custom-select">
+      <select class="custom-select" onChange={(e) => handleInput(e)}>
         <option selected disabled>
           choose
         </option>

@@ -15,16 +15,16 @@ export default function SideNav({ notShow, commentPost }) {
         <div className="nav-links">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">Explore</a>
+              <a href="/">Explore</a>
             </li>
             <li>
-              <a href="#">Bookmarks</a>
+              <a href="/">Bookmarks</a>
             </li>
             <li>
-              <a href="#">Profile</a>
+              <a href="/">Profile</a>
             </li>
           </ul>
           <ul>
